@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Castro and Dana",
+    "city": "Mountain View",
+    "distanceAway": "3"
+  },
+  {
+    "name": "W San Carlos St",
+    "city": "San Jose",
+    "distanceAway": "35"
+  },
+  {
+    "name": "Scott Blvd",
+    "city": "Santa Clara",
+    "distanceAway": "25"
+  },
+  {
+    "name": "Ravenswood Shopping Center",
+    "city": "Palo Alto",
+    "distanceAway": "10"
+  }
+]

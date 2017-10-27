@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Halibut",
+    "imageUrl": "/assets/images/halibut.jpg",
+    "pricePerPound": "24.95"
+  },
+  {
+    "name": "Atlantic Cod",
+    "imageUrl": "/assets/images/cod.jpg",
+    "pricePerPound": "3.40"
+  },
+  {
+    "name": "Salmon",
+    "imageUrl": "/assets/images/salmon.jpg",
+    "pricePerPound": "14.50"
+  },
+  {
+    "name": "Rockfish",
+    "imageUrl": "/assets/images/rockfish.jpg",
+    "pricePerPound": "9.95"
+  },
+  {
+    "name": "Flounder",
+    "imageUrl": "/assets/images/flounder.jpg",
+    "pricePerPound": "10.79"
+  },
+  {
+    "name": "Crab",
+    "imageUrl": "/assets/images/crab.jpg",
+    "pricePerPound": "40.99"
+  },
+  {
+    "name": "Shrimp",
+    "imageUrl": "/assets/images/shrimp.jpg",
+    "pricePerPound": "3.51"
+  },
+  {
+    "name": "Squid",
+    "imageUrl": "/assets/images/squid.jpg",
+    "pricePerPound": "5.99"
+  },
+  {
+    "name": "Octopus",
+    "imageUrl": "/assets/images/octopus.jpg",
+    "pricePerPound": "7.99"
+  },
+  {
+    "name": "Mackerel",
+    "imageUrl": "/assets/images/mackerel.jpg",
+    "pricePerPound": "13.95"
+  }
+]

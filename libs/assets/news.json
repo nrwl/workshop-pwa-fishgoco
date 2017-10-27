@@ -1,0 +1,32 @@
+[
+  {
+    "title": "King Mackerel Marked Down",
+    "message": "Two-day sale on now. Come in or order online.",
+    "imageUrl": "/assets/images/mackerel-markdown.jpg",
+    "dateTime": "2017-10-25 10:00:00"
+  },
+  {
+    "title": "Fresh Halibut Today",
+    "message": "A full boat of Halibut arrived in the bay early this morning. Get 'em while they last!",
+    "imageUrl": "/assets/images/halibut-boats.jpg",
+    "dateTime": "2017-10-25 06:00:00"
+  },
+  {
+    "title": "Market Price Predictions for 2018",
+    "message": "Expect market prices to drop in 2018 with an increase in population due to less predatory fish as a result of climate changes.",
+    "imageUrl": "/assets/images/market-predictions.jpg",
+    "dateTime": "2017-10-24 12:00:00"
+  },
+  {
+    "title": "Is Octopus the New Crab?",
+    "message": "Our market insiders are tracking a new trend among millennials...more and more are ordering octopus.",
+    "imageUrl": "/assets/images/octopus-new-crab.jpg",
+    "dateTime": "2017-10-23 08:00:00"
+  },
+  {
+    "title": "New Store Front in Mountain View",
+    "message": "Come check out our latest FishGoCo store in downtown Mountain View!",
+    "imageUrl": "/assets/images/mountain-view.jpg",
+    "dateTime": "2017-10-23 06:00:00"
+  }
+]

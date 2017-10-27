@@ -1,0 +1,8 @@
+<h1>Fresh Fish</h1>
+<section>
+  <a *ngFor="let menuItem of menuItems$ | async">
+    <img *ngIf="menuItem.imageUrl" src="{{menuItem.imageUrl}}" alt="" class="image">
+    <h2>{{menuItem.name}}</h2>
+    <div>{{menuItem.pricePerPound}} per pound</div>
+  </a>
+</section>
