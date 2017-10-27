@@ -1,7 +1,9 @@
 <h1>Welcome Aboard!</h1>
 <article *ngFor="let newsItem of newsItems$ | async">
-  <img *ngIf="newsItem.imageUrl" src="{{newsItem.imageUrl}}" alt="" class="image">
+  <picture *ngIf="newsItem.imageUrl">
+    <source type="image/webp" srcset="{{newsItem.imageUrl}}.webp">
+    <img src="{{newsItem.imageUrl}}.jpg" alt="" class="image">
+  </picture>
   <h2>{{newsItem.title}}</h2>
   <p>{{newsItem.message}}</p>
-  <div>{{newsItem.dateTime | date: 'MMM d, y ha' }}</div>
 </article>
