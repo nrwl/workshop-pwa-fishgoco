@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #4c4c4c;
+  cursor: pointer;
+  &.icon {
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+  }
+  &:not(.icon) {
+    text-transform: uppercase;
+    margin-left: 2em;
+    letter-spacing: .1em;
+  }
+}
