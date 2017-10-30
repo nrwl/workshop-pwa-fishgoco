@@ -2,5 +2,5 @@
 <article *ngFor="let storeLocation of storeLocations$ | async">
   <h2>{{storeLocation.name}}</h2>
   <div>{{storeLocation.city}}</div>
-  <div>{{storeLocation.distanceAway}} miles away</div>
+  <div class="distance">{{storeLocation.distanceAway}} miles away</div>
 </article>

@@ -1,3 +1,18 @@
-.image {
-  width: 100%;
+article {
+  padding: 1.2em;
+  margin-bottom: 10px;
+  max-width: 569px;
+  box-shadow: 0 0 0.5px 0 rgba(0,0,0,.14), 0 1px 1px 0 rgba(0,0,0,.24);
+  &:hover {
+    background-color: rgba(0,0,0,.03);
+    cursor: pointer;
+  }
+  h2 {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0;
+  }
+  .distance {
+    font-style: italic;
+  }
 }

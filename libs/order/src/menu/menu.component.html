@@ -1,11 +1,12 @@
 <h1>Fresh Fish</h1>
-<section>
-  <a *ngFor="let menuItem of menuItems$ | async">
-    <picture *ngIf="menuItem.imageUrl">
-      <source type="image/webp" srcset="{{menuItem.imageUrl}}.webp">
-      <img src="{{menuItem.imageUrl}}.jpg" alt="" class="image">
-    </picture>
-    <h2>{{menuItem.name}}</h2>
+<article *ngFor="let menuItem of menuItems$ | async">
+  <picture *ngIf="menuItem.imageUrl">
+    <source type="image/webp" srcset="{{menuItem.imageUrl}}.webp">
+    <img src="{{menuItem.imageUrl}}.jpg" alt="" class="image">
+  </picture>
+  <div class="details">
+    <h2 class="name">{{menuItem.name}}</h2>
     <div>{{menuItem.pricePerPound}} per pound</div>
-  </a>
-</section>
+    <button>Add to Cart</button>
+  </div>
+</article>
