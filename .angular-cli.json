@@ -5,9 +5,9 @@
   },
   "apps": [
     {
-      "name": "non-pwa",
-      "root": "apps/non-pwa/src",
-      "outDir": "dist/apps/non-pwa",
+      "name": "fish-goco",
+      "root": "apps/fish-goco/src",
+      "outDir": "dist/apps/fish-goco",
       "assets": [
         {
           "input": "../../../libs/assets/",

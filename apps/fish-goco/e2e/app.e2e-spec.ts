@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('non-pwa App', () => {
+describe('fish-goco App', () => {
   let page: AppPage;
 
   beforeEach(() => {
