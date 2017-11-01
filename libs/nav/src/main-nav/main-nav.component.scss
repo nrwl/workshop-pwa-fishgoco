@@ -23,7 +23,7 @@ a {
   font-weight: bold;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
   .icon {
     width: 110px;
     min-width: 110px;
@@ -32,5 +32,9 @@ a {
       height: 25px;
       margin-right: 4px;
     }
+  }
+  a:not(.icon) {
+    margin-left: 1em;
+    font-size: .8em;
   }
 }

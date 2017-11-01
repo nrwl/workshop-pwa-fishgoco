@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { CartState } from '@fishgoco-pwa/cart-state';
-import { OrderState } from '@fishgoco-pwa/order';
 import 'rxjs/add/operator/filter';
 
 @Component({
@@ -10,16 +9,17 @@ import 'rxjs/add/operator/filter';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  cartMenuItems$;
+  items$;
 
-  constructor(private store: Store<CartState>,
-              private ordersStore: Store<OrderState>) {
+  constructor(private store: Store<CartState>) {
   }
 
   ngOnInit() {
-    this.cartMenuItems$ = this.store.select(s => s.cart.menuItemIds)
-      .switchMap(items => this.ordersStore.select(s => s.order.menuItems)
-        .map(i => i.filter(a => items.indexOf(a.id) >= 0)));
+    this.items$ = this.store.select(s => s.cart.items);
+  }
+
+  removeItem(item) {
+    this.store.dispatch({type: 'REMOVE_ITEM', payload: item});
   }
 
   clearCart() {
