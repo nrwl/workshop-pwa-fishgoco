@@ -14,6 +14,6 @@ export class CartSummaryComponent implements OnInit {
   constructor(private store: Store<CartState>) {}
 
   ngOnInit() {
-    this.cartCount$ = this.store.select(s => s.cart.menuItemIds).map(items => items.length);
+    this.cartCount$ = this.store.select(s => s.cart.items).map(items => items.length);
   }
 }

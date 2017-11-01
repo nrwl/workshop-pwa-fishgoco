@@ -1,6 +1,13 @@
+import { Item } from './cart.interfaces';
+
 export interface AddToCart {
   type: 'ADD_TO_CART';
-  payload: string;
+  payload: Item;
+}
+
+export interface RemoveItem {
+  type: 'REMOVE_ITEM';
+  payload: Item;
 }
 
 export interface ClearCart {
@@ -8,4 +15,4 @@ export interface ClearCart {
   payload: {};
 }
 
-export type CartAction = AddToCart | ClearCart;
+export type CartAction = AddToCart | RemoveItem | ClearCart;

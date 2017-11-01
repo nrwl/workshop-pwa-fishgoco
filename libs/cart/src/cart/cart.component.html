@@ -1,9 +1,16 @@
 <h1>Cart</h1>
-<table>
-  <tr *ngFor="let menuItem of cartMenuItems$ | async">
-    <td>{{menuItem.name}}</td>
-    <td>{{menuItem.pricePerPound}} per pound</td>
-    <td></td>
-  </tr>
-</table>
+<div class="item" *ngFor="let item of items$ | async">
+  <picture *ngIf="item.imageUrl">
+    <source type="image/webp" srcset="{{item.imageUrl}}.webp">
+    <img src="{{item.imageUrl}}.jpg" alt="" class="image">
+  </picture>
+  <div class="details">
+    <h2 class="name">{{item.name}}</h2>
+    <div>{{item.pricePerPound}} per pound</div>
+  </div>
+  <div>
+    <h2>Qty: {{item.quantity}}</h2>
+    <button (click)="removeItem(item)">Remove</button>
+  </div>
+</div>
 <button (click)="clearCart()">Clear Cart</button>
