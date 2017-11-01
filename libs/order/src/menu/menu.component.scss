@@ -14,8 +14,8 @@ article {
 }
 
 .image {
-  width: 200px;
-  height: 200px;
+  width: 75px;
+  height: 75px;
   border: 2px solid gray;
   border-radius: 50%;
 }
@@ -34,12 +34,34 @@ button {
   }
 }
 
-@media (max-width: 420px) {
-  .image {
-    width: 75px;
-    height: 75px;
+@media only screen
+and (min-device-width: 568px) {
+  :host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .name {
-    font-size: 1.2em;
+  h1 {
+    min-width: 100%;
+    flex: 1;
+  }
+  article {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px) {
+  .image {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media only screen
+and (min-device-width: 1024px) {
+  .details {
+    font-size: 1.4em;
   }
 }

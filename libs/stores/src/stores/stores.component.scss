@@ -1,11 +1,13 @@
 article {
-  padding: 1.2em;
   margin-bottom: 10px;
-  max-width: 569px;
+  width: 100%;
   box-shadow: 0 0 0.5px 0 rgba(0,0,0,.14), 0 1px 1px 0 rgba(0,0,0,.24);
   &:hover {
     background-color: rgba(0,0,0,.03);
     cursor: pointer;
+  }
+  .details {
+    padding: 1.2em;
   }
   h2 {
     font-size: 1em;
@@ -14,5 +16,22 @@ article {
   }
   .distance {
     font-style: italic;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px) {
+  :host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  h1 {
+    min-width: 100%;
+    flex: 1;
+  }
+  article {
+    width: calc(50% - 20px);
+    margin: 10px;
   }
 }
