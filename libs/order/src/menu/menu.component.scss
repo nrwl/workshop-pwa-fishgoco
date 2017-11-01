@@ -1,6 +1,45 @@
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.details {
+  margin-left: 1em;
+}
+
+.name {
+  margin: 0;
+}
+
 .image {
   width: 200px;
   height: 200px;
   border: 2px solid gray;
   border-radius: 50%;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px;
+  background: #4c4c4c;
+  color: white;
+  padding: 4px 8px;
+  margin-top: 4px;
+  outline: none;
+  &:hover {
+    color: #94daea;
+  }
+}
+
+@media (max-width: 420px) {
+  .image {
+    width: 75px;
+    height: 75px;
+  }
+  .name {
+    font-size: 1.2em;
+  }
 }
