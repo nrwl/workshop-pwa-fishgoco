@@ -20,20 +20,6 @@ article {
   border-radius: 50%;
 }
 
-button {
-  cursor: pointer;
-  border: 0;
-  border-radius: 8px;
-  background: #4c4c4c;
-  color: white;
-  padding: 4px 8px;
-  margin-top: 4px;
-  outline: none;
-  &:hover {
-    color: #94daea;
-  }
-}
-
 @media only screen
 and (min-device-width: 568px) {
   :host {

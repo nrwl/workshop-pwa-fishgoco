@@ -23,8 +23,7 @@
       "tsconfig": "../../../tsconfig.app.json",
       "testTsconfig": "../../../tsconfig.spec.json",
       "prefix": "app",
-      "styles": [
-      ],
+      "styles": [],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -33,8 +32,32 @@
       }
     },
     {
+      "name": "add-to-cart",
+      "root": "libs/add-to-cart/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
       "name": "assets",
       "root": "libs/assets"
+    },
+    {
+      "name": "cart",
+      "root": "libs/cart/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "cart-state",
+      "root": "libs/cart-state/src",
+      "test": "../../../test.js",
+      "appRoot": ""
+    },
+    {
+      "name": "cart-summary",
+      "root": "libs/cart-summary/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     },
     {
       "name": "feed",

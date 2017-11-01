@@ -14,7 +14,8 @@ export class StoresComponent implements OnInit {
   constructor(private store: Store<StoresState>) {}
 
   ngOnInit() {
-    this.storeLocations$ = this.store.select(s => s.stores.storeLocations)
+    this.storeLocations$ = this.store
+      .select(s => s.stores.storeLocations)
       .map(i => i.sort((a, b) => a.distanceAway - b.distanceAway));
   }
 }

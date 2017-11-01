@@ -7,6 +7,6 @@
   <div class="details">
     <h2 class="name">{{menuItem.name}}</h2>
     <div>{{menuItem.pricePerPound}} per pound</div>
-    <button>Add to Cart</button>
+    <app-add-to-cart-button [menuItemId]="menuItem.id"></app-add-to-cart-button>
   </div>
 </article>

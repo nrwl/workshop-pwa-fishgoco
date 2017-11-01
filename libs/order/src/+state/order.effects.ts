@@ -28,7 +28,5 @@ export class OrderEffects {
     }
   });
 
-  constructor(private actions: Actions,
-              private d: DataPersistence<OrderState>,
-              private httpClient: HttpClient) {}
+  constructor(private actions: Actions, private d: DataPersistence<OrderState>, private httpClient: HttpClient) {}
 }

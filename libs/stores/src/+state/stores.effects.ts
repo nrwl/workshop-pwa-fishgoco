@@ -28,7 +28,5 @@ export class StoresEffects {
     }
   });
 
-  constructor(private actions: Actions,
-              private d: DataPersistence<StoresState>,
-              private httpClient: HttpClient) {}
+  constructor(private actions: Actions, private d: DataPersistence<StoresState>, private httpClient: HttpClient) {}
 }
