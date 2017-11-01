@@ -1,4 +1,5 @@
 export interface MenuItem {
+  id: string;
   name: string;
   imageUrl?: string;
   pricePerPound: number;
