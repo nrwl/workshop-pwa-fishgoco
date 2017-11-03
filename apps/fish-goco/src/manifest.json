@@ -1,0 +1,30 @@
+{
+  "short_name": "Fish Goco",
+  "name": "Fish Goco",
+  "icons": [
+    {
+      "src": "assets/images/favicon-64x64.ico",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "assets/images/favicon-128x128.ico",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "assets/images/favicon-256x256.ico",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "assets/images/favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#ffffff",
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "theme_color": "#94DAEA"
+}
