@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "format": "prettier --single-quote --print-width 120 --write \"{apps,libs}/**/*.ts\""
+    "format": "prettier --single-quote --print-width 120 --write \"{apps,libs}/**/*.ts\"",
+    "prerender": "ng build --prod --build-optimizer && ng build --prod --app 1 && node app-shell/renderer.js"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/http": "5.0.0-rc.3",
     "@angular/platform-browser": "5.0.0-rc.3",
     "@angular/platform-browser-dynamic": "5.0.0-rc.3",
+    "@angular/platform-server": "^5.0.0",
     "@angular/router": "5.0.0-rc.3",
     "@angular/service-worker": "1.0.0-beta.16",
     "@ngrx/effects": "^4.0.0",
@@ -50,6 +52,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "preboot": "^4.5.2",
     "prettier": "1.7.4",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",

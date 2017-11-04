@@ -34,6 +34,35 @@
       }
     },
     {
+      "name": "fish-goco",
+      "platform": "server",
+      "root": "apps/fish-goco/src",
+      "outDir": "dist/apps/fish-goco-server",
+      "assets": [
+        {
+          "input": "../../../libs/assets/",
+          "output": "assets/",
+          "glob": "**/*"
+        },
+        "favicon.ico",
+        "manifest.json"
+      ],
+      "index": "index.html",
+      "main": "main.server.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "../../../tsconfig.server.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
       "name": "add-to-cart",
       "root": "libs/add-to-cart/src",
       "test": "../../../test.js",

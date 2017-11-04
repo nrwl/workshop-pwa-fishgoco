@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "module": "es2015",
+    "baseUrl": ".",
+    "paths": {
+      "@fishgoco-pwa/*": [
+        "libs/*"
+      ]
+    }
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "**/*.e2e-spec.ts",
+    "node_modules",
+    "tmp"
+  ],
+  "angularCompilerOptions": {
+    "entryModule": "apps/fish-goco/src/app/app.server.module#AppServerModule"
+  }
+}
