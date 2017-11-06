@@ -22,24 +22,25 @@
     "@angular/platform-browser": "5.0.0-rc.3",
     "@angular/platform-browser-dynamic": "5.0.0-rc.3",
     "@angular/router": "5.0.0-rc.3",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.4.2",
-    "zone.js": "^0.8.14",
-    "@nrwl/nx": "0.1.0-beta.0",
     "@ngrx/effects": "^4.0.0",
     "@ngrx/router-store": "^4.0.0",
     "@ngrx/store": "^4.0.0",
-    "@ngrx/store-devtools": "^4.0.0"
+    "@ngrx/store-devtools": "^4.0.0",
+    "@nrwl/nx": "0.1.0-beta.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "nrwl/fix-cli-build",
     "@angular/compiler-cli": "5.0.0-rc.3",
-    "@nrwl/schematics": "0.1.0-beta.0",
     "@angular/language-service": "5.0.0-rc.3",
+    "@nrwl/schematics": "0.1.0-beta.0",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.1.1",
+    "firebase-tools": "^3.14.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -48,10 +49,10 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "prettier": "1.7.4",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
-    "typescript": "2.5.3",
-    "prettier": "1.7.4"
+    "typescript": "2.5.3"
   }
 }
