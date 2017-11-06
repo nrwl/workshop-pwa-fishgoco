@@ -6,6 +6,7 @@
   "apps": [
     {
       "name": "fish-goco",
+      "serviceWorker": true,
       "root": "apps/fish-goco/src",
       "outDir": "dist/apps/fish-goco",
       "assets": [
